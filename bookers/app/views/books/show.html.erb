@@ -1,0 +1,18 @@
+<div class='flashmassage'>
+  <%= flash[:notice] %>
+</div>
+<!------------------------------------------------------------------->
+<div class="show-title"> 
+ <strong>Titel:</strong>
+ <span><%= @book.title %></span>
+</div>
+
+<div class="show-body">
+<strong>Body:</strong>
+<span><%= @book.body %></span>
+</div>
+
+<p class="link-button">
+ <%= link_to "Edit",edit_book_path(@book.id)%> | 
+ <%= link_to "Back",books_path %>
+</p>
